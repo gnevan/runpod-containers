@@ -4,6 +4,14 @@ variable "PUBLISHER" {
 
 group "default" {
     targets = [
+        "201-py310-rocm57-ubuntu2204",
+        "212-py310-rocm602-ubuntu2204",
+        "212-py310-rocm61-ubuntu2204",
+    ]
+}
+
+group "default-old" {
+    targets = [
         ### CUDA ###
         # CUDA 11.1
         "191-py39-cuda111-devel-ubuntu2004",
